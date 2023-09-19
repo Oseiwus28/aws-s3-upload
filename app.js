@@ -21,8 +21,8 @@ const uploadFile = async()=>{
             Body: fileContent
         });
         await s3Client.send(object)
-    }catch(error){
-        console.log(error)
+    }catch(e){
+        console.log(e)
     }
 }
 
